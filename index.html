@@ -1,112 +1,174 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mày còn thích tao honggg 💞</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #ffe6ea, #ffb6c1);
-            font-family: 'Comic Sans MS', cursive;
-            text-align: center;
-            color: #d63031;
-            overflow: hidden;
-            height: 100vh;
-        }
-        h1 {
-            margin-top: 80px;
-            font-size: 2.5em;
-            color: #c0392b;
-            text-shadow: 2px 2px 5px #fab1a0;
-        }
-        img {
-            width: 220px;
-            margin: 30px auto;
-            animation: bounce 1.5s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            border-radius: 30px;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .no { background-color: #fab1a0; color: white; position: relative; }
-        .yes { background-color: #ff7675; color: white; }
-        .btn:hover { transform: scale(1.1); }
-        .heart {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: red;
-            transform: rotate(-45deg);
-            animation: floatUp 4s linear infinite;
-            opacity: 0.8;
-        }
-        .heart::before, .heart::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: red;
-            border-radius: 50%;
-        }
-        .heart::before { top: -10px; left: 0; }
-        .heart::after { left: 10px; top: 0; }
-        @keyframes floatUp {
-            from { transform: translateY(0) rotate(-45deg); opacity: 1; }
-            to { transform: translateY(-800px) rotate(-45deg); opacity: 0; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Em có chịu honggg 💕</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #ffe6f9, #dff9fb);
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        overflow: hidden;
+    }
+    h1 {
+        margin-top: 60px;
+        color: #d63031;
+        text-shadow: 2px 2px 6px rgba(255, 182, 193, 0.6);
+    }
+    .btn {
+        margin: 15px;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .yes {
+        background: #ff7675;
+        color: white;
+    }
+    .no {
+        background: #fab1a0;
+        color: white;
+        position: relative;
+    }
+    .btn:hover { transform: scale(1.1); }
+
+    .road {
+        position: relative;
+        width: 90%;
+        height: 200px;
+        margin: 60px auto;
+        background: linear-gradient(#fff 80%, #aaa 80%);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .bike {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        width: 120px;
+        transition: left 0.2s linear;
+    }
+
+    .finish {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        font-size: 2em;
+        color: #e84393;
+    }
+
+    .progress {
+        font-size: 1.3em;
+        color: #636e72;
+        margin-top: 10px;
+    }
+
+    .heart {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: red;
+        transform: rotate(-45deg);
+        animation: floatUp 4s linear infinite;
+    }
+    .heart::before, .heart::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+    }
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { left: 10px; top: 0; }
+
+    @keyframes floatUp {
+        from { transform: translateY(0) rotate(-45deg); opacity: 1; }
+        to { transform: translateY(-800px) rotate(-45deg); opacity: 0; }
+    }
+</style>
 </head>
 <body>
-    <h1>Mày còn thích tao honggg 💞</h1>
-    <img src="https://media.tenor.com/2roX3uxz_68AAAAi/cute-love.gif" alt="cute chick">
-    <div>
-        <button class="btn no" id="noBtn">Không 😢</button>
-        <button class="btn yes" id="yesBtn">Có 💗</button>
-    </div>
-    <p id="message">Không chọn hoặc thoát tức là thích nha 🤣</p>
 
-    <script>
-        const noBtn = document.getElementById('noBtn');
-        const yesBtn = document.getElementById('yesBtn');
-        const message = document.getElementById('message');
+<h1>Em có chịu làm người yêu anh honggg 💞</h1>
+<div>
+    <button class="btn no" id="noBtn">Không 😢</button>
+    <button class="btn yes" id="yesBtn">Có 💗</button>
+</div>
 
-        // Nút "Không" né chuột 😆
-        noBtn.addEventListener('mouseover', () => {
-            const x = Math.random() * (window.innerWidth - 100);
-            const y = Math.random() * (window.innerHeight - 100);
-            noBtn.style.position = 'absolute';
-            noBtn.style.left = x + 'px';
-            noBtn.style.top = y + 'px';
-        });
+<div class="road">
+    <img src="https://media.tenor.com/USyEck8kOEYAAAAi/cute-cycling.gif" class="bike" id="bike">
+    <div class="finish">🏁💖</div>
+</div>
 
-        // Nút "Có" mới được đến đích
-        yesBtn.addEventListener('click', () => {
-            message.innerHTML = 'Hehe tao biết mà 🥰 mày là nhất 💞';
-            setTimeout(() => {
-                window.location.href = "love.html";
-            }, 2000); // đợi 2s rồi mới sang trang tiếp
-        });
+<p id="message" style="font-size:1.2em;color:#636e72;margin-top:10px;">
+Nhấn “Có” đi cho anh vui mà 😳
+</p>
+<div class="progress" id="progressText">Đang chờ em nhấn “Có”...</div>
 
-        // trái tim bay khắp nơi
-        setInterval(() => {
+<script>
+    const noBtn = document.getElementById('noBtn');
+    const yesBtn = document.getElementById('yesBtn');
+    const bike = document.getElementById('bike');
+    const msg = document.getElementById('message');
+    const progressText = document.getElementById('progressText');
+
+    let moving = false;
+    let progress = 0;
+
+    noBtn.addEventListener('mouseover', () => {
+        const x = Math.random() * (window.innerWidth - 100);
+        const y = Math.random() * (window.innerHeight - 100);
+        noBtn.style.position = 'absolute';
+        noBtn.style.left = x + 'px';
+        noBtn.style.top = y + 'px';
+    });
+
+    yesBtn.addEventListener('click', () => {
+        if (moving) return;
+        moving = true;
+        msg.innerHTML = 'Hehe anh biết mà 🥰 Em là nhất 💞';
+        progressText.innerText = "🚴‍♀️ Đang đến đích... 0%";
+        spawnHearts();
+        moveBike();
+    });
+
+    function moveBike() {
+        const roadWidth = document.querySelector('.road').offsetWidth;
+        const finishX = roadWidth - 150; // vị trí gần đích
+
+        const interval = setInterval(() => {
+            progress += 1;
+            const pos = 30 + (finishX - 30) * (progress / 100);
+            bike.style.left = pos + "px";
+            progressText.innerText = `🚴‍♀️ Đang đến đích... ${progress}%`;
+
+            if (progress >= 100) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    window.location.href = "finish.html";
+                }, 1000);
+            }
+        }, 80);
+    }
+
+    function spawnHearts() {
+        for (let i = 0; i < 20; i++) {
             const heart = document.createElement('div');
             heart.className = 'heart';
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = 2 + Math.random() * 3 + 's';
             document.body.appendChild(heart);
             setTimeout(() => heart.remove(), 4000);
-        }, 300);
-    </script>
+        }
+    }
+</script>
+
 </body>
 </html>
